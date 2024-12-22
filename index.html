@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharkey - Art Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.1/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Sharkey</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#commissions">Commissions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img src="image02.jpg" alt="Sharkey" class="profile-img-center">
+                <h1>Sharkey</h1>
+                <p>drawing, it's something I love to do and I find it incredibly calming</p>
+            </div>
+        </section>
+
+        <section id="gallery-preview" class="gallery-preview">
+            <h2><a href="gallery.html" class="gallery-link">Gallery</a> preview</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="e3980a13.jpg" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="5ae070ac.jpg" alt="Gallery Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="1dc1436b.jpg" alt="Gallery Image 3">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <img src="image02.jpg" alt="Artist Portrait" class="profile-img" id="portraitImage">
+                <p>Hi! Hi! Call me Sharkey! I'm an 18 y/o artist attending college, hoping to get commissions to pay for said college!
+                    I've been drawing for awhile; I also figured commissions could keep me motivated to draw, as it's something I love to do and I find it incredibly calming</p>
+            </div>
+        </section>
+
+        <section id="commissions" class="commissions">
+            <div class="commissions-content">
+                <h2>About Commissions</h2>
+                <p>
+                When asking about commissions, please have an idea of what you want, whether it's an already made character or a 
+                Pinterest board as inspiration, as well as what the commission will be, i.e., a headshot, bust, full body pose 
+                (preferably a pose/pose reference accompanied), and if possible, a color sheet!
+                </p>
+            </div>
+        </section>
+        <section id=" Rules/Guidelines" class="Rules/Guidelines">
+            <div class="Rules/Guidelines-content">
+                <h2>Rules/Guidelines</h2>
+                <p>I will not do anything NSFW, as in, like porn or overtly sexual anything like that; nothing hateful/racist/bigoted/etc.
+                     Be nice and be patient. I am a full-time college student, but I'm trying my best! I will send a sketch once a sketch is
+                      finished and ask what you think, unless you'd rather keep it a surprise. At that point, adjustments are allowed, but 
+                      nothing incredibly major! But after that point, little to no adjustments can be made!
+                </p>
+            </div>
+        </section>
+        <section id="pricing" class="pricing">
+            <div class="pricing-content">
+                <h2>Pricing</h2>
+                <p>I'm flexible, and new to this so I was thinking around $17 CAD per hour! I only accept paypal and it will be given once commissioned.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+                <p>Telegram: <a href="https://t.me/s1lly_sh4rkey" target="_blank">@s1lly_sh4rkey</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/s1lly.sh4rk3y" target="_blank">@s1lly.sh4rk3y</a></p>
+                <p>Discord: <a href="https://discordapp.com/users/s1lly.sh4rkey" target="_blank">@s1lly.sh4rkey</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal structure -->
+    <div id="imageModal" class="modal">
+        <span id="closeModal">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Enlarged Image">
+        </div>
+        <span id="leftArrow" class="arrow left">&#10094;</span>
+        <span id="rightArrow" class="arrow right">&#10095;</span>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/s1lly.sh4rk3y" target="_blank" class="social-icon">Instagram</a>
+            <a href="https://t.me/s1lly_sh4rkey" target="_blank" class="social-icon">Telegram</a>
+            <a href="https://discordapp.com/users/s1lly.sh4rkey" target="_blank" class="social-icon">Discord</a>
+        </div>
+        <p>&copy; 2024 Sharkey. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

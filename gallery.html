@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Sharkey Art Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Sharkey</div>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#commissions">Commissions</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="gallery" class="gallery">
+            <h2>Gallery</h2>
+
+            <!-- Category Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="line-art">Line Art</button>
+                <button class="filter-btn" data-filter="color-palette">Color Palette</button>
+                <button class="filter-btn" data-filter="trigger-warning">Trigger Warning</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="landscape">
+                    <img src="33dd585d.jpg" alt="Image 4">
+                </div>
+                <div class="gallery-item" data-category="portrait">
+                    <img src="5ae070ac.jpg" alt="Image 5">
+                </div>
+                <div class="gallery-item" data-category="line-art">
+                    <img src="76fd7ae5.jpg" alt="Line Art Image 1">
+                </div>
+                <div class="gallery-item" data-category="line-art">
+                    <img src="e3980a13.jpg" alt="Line Art Image 2">
+                </div>
+                <div class="gallery-item" data-category="color-palette">
+                    <img src="3052a089.jpg" alt="Color Palette Image 1">
+                </div>
+                <div class="gallery-item" data-category="color-palette">
+                    <img src="1dc1436b.jpg" alt="Color Palette Image 2">
+                </div>
+            </div>
+
+            <!-- Trigger Warning Section -->
+            <h2>Trigger Warning - Blood</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item blurred" data-category="trigger-warning">
+                    <img src="82b30b45.jpg" alt="Image 7">
+                </div>
+                <div class="gallery-item blurred" data-category="trigger-warning">
+                    <img src="3698c83e.jpg" alt="Image 8">
+                </div>
+                <div class="gallery-item blurred" data-category="trigger-warning">
+                    <img src="873a7603.jpg" alt="Image 9">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal structure -->
+    <div id="imageModal" class="modal">
+        <span id="closeModal">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Enlarged Image">
+        </div>
+        <span id="leftArrow" class="arrow left">&#10094;</span>
+        <span id="rightArrow" class="arrow right">&#10095;</span>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/s1lly.sh4rk3y" target="_blank" class="social-icon">Instagram</a>
+            <a href="https://t.me/s1lly_sh4rkey" target="_blank" class="social-icon">Telegram</a>
+            <a href="https://discordapp.com/users/s1lly.sh4rkey" target="_blank" class="social-icon">Discord</a>
+        </div>
+        <p>&copy; 2024 Sharkey. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
